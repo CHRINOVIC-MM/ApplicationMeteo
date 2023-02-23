@@ -42,3 +42,18 @@ date.innerHTML  = getDateTime();
 setInterval(()=>{
     date.innerHTML  = getDateTime();
 }, 1000);
+
+function getPublicIp(){
+    fetch('https://geolocation-db.com/json/',
+    {
+        method: 'GET',
+    })
+
+    .then((Response) => Response.json())
+    .then((data) => {
+        console.log(data);
+        currentCity = data.currentCity;
+    })
+}
+
+getPublicIp();
