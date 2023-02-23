@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
@@ -14,12 +14,12 @@
             <div>
                 <form action="" class="search" id="search">
                     <input type="text" id="query" placeholder="Recherche...">
-                    <button>S
-                        <!-- Endroit à mettre une icone  -->
+                    <button>
+                        <i class="fas fa-search"></i>
                     </button>
                 </form>
                 <div class="weather-icon">
-                    <img src="./icons/" id="icon">
+                    <img src="./icons/sun/4.png" id="icon">
                 </div>
                 <div class="temperature">
                     <h1 id="temps">0</h1>
@@ -31,18 +31,18 @@
                 <div class="divider"></div>
                 <div class="condition-rain">
                     <div class="condition">
-                        <i class="fa-solid fa-cloud"></i>
+                        <i class="fas fa-cloud"></i>
                         <div class="condition">condition</div>
                     </div>
                     <div class="rain">
-                        <i class="fa-solid fa-droplet"></i>
+                        <i class="fas fa-tint"></i>
                         <p id="rain">Perc - 0%</p>
                     </div>
                 </div>
             </div>
             <div class="location">
                 <div class="location-icon">
-                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="location-text">
                     <p class="location">Location</p>
@@ -65,7 +65,7 @@
                 <div class="card">
                     <h2 class="day-name">Monday</h2>
                     <div class="card-icon">
-                        <!-- Une icone -->
+                        <img src="./icons/moon/1.png" alt="">
                     </div>
                     <div class="day-temp">
                         <h2 class="temps">32</h2>
