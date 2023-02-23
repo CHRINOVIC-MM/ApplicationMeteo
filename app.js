@@ -1,4 +1,5 @@
-const temp = document.getElementById('temp');
+const temp = document.getElementById('temp'),
+    date = document.getElementById('date-time');
 
 let currentCity = '';
 let currentUnit = '';
@@ -33,3 +34,11 @@ function getDateTime(){
 
     return `${dayString}, ${hour}:${minute}`
 }
+
+date.innerHTML  = getDateTime();
+
+//Update time every second
+
+setInterval(()=>{
+    date.innerHTML  = getDateTime();
+}, 1000);
