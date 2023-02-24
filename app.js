@@ -57,3 +57,13 @@ function getPublicIp(){
 }
 
 getPublicIp();
+
+//get weather data
+
+function getWeatherData(city, unit, hourlyOrWeek){
+    //visualcrossing.com
+    const apiKey = '';
+    fetch('',{
+        method: 'GET'
+    })
+}
